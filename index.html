@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="../bootstrap-3.3.5-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <section class="row">
+      <div class="col-xs-5 player-section">
+        <div class="player-choice">
+          <span id="rock" class="glyphicon glyphicon-apple choice-symbol hidden"> Rock</span>
+          <span id="paper" class="glyphicon glyphicon-file choice-symbol hidden"> Paper</span>
+          <span id="scissors" class="glyphicon glyphicon-scissors choice-symbol hidden"> Scissors</span>
+        </div>
+      </div>
+      <div class="col-xs-2 result-section">
+        <span id="counter">VS</span>
+        <div class="player-input">
+          <form class="form-group" id="player-form">
+            <div id="rock-choice"><input type="radio" value="Rock" name="choice"> Rock</div>
+            <div id="paper-choice"><input type="radio" value="Paper" name="choice"> Paper</div>
+            <div id="scissors-choice"><input type="radio" value="Scissors" name="choice"> Scissors</div>
+            <button type="submit" id="choice-button">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-xs-5 rival-section">
+        <span id="rock" class="glyphicon glyphicon-apple choice-symbol hidden"> Rock</span>
+        <span id="paper" class="glyphicon glyphicon-file choice-symbol hidden"> Paper</span>
+        <span id="scissors" class="glyphicon glyphicon-scissors choice-symbol hidden"> Scissors</span>
+      </div>
+    </section>
+  </div>
+
+  <script src="../jquery-2.1.4.js"></script>
+  <script src="../bootstrap-3.3.5-dist/js/bootstrap.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
